@@ -1,0 +1,85 @@
+.Trending{
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    margin: auto;
+    padding: 0;
+}
+
+.Trending-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 8px;
+    margin-bottom: 20px;
+}
+.Trending-title>div>:first-child{
+color: rgb(0, 0, 0);
+font-size: 30px;
+display: flex;
+flex-direction: row;
+}
+.Trending-title>div>:first-child::before,.Trending-title>div>:first-child::after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid rgb(78, 56, 56);
+    margin: auto 20px;
+    width: 70px;
+}
+.Trending-good_frame{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.Trending-Goods{
+    position: relative;
+    left:100px;
+    width: 2300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .9s all;
+}
+.Trending-good_frame:hover>.LRarrow{
+visibility: visible;
+opacity: 1;
+}
+.LRarrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 45%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s;
+    z-index: 4;
+}
+.LRarrow>i{
+    position: absolute;
+  border: 3px solid #6d6d6dc0;
+  color: #646464c0;
+margin: 0 20px;
+/* font-size: 30px; */
+border-radius: 50px;
+display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s;
+}
+.LRarrow>i:hover{
+    color: #ffffffc0;
+background-color: #00ffff;
+border: 3px solid #00ffff;
+
+  }
+  .icon-left-open{
+      left: 0;
+  }
+  .icon-right-open{
+      right: 0;
+  }

@@ -1,0 +1,157 @@
+.Vitrin{
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    /* padding: 0 25px; */
+    /* height: 200px; */
+    /* padding-top: 6.25%;  */
+        position: relative;
+}
+.Vitrin-Holder{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Vit{
+    width: 100%;
+    margin: 0px 10px;
+    position: relative;
+    overflow: hidden;
+    line-height: 15px;
+    cursor: pointer;
+
+}
+.Vit>img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all;
+}
+.Vit>.Vit-bottom{
+    right: 15px;
+    text-align: right;
+    position: absolute;
+    /* width: 100%; */
+    bottom: 7%;
+    font-size: 20px;
+    font-size: calc(0.7em + 1vmin);
+}
+.Vit-bottom>p{
+    color: rgb(56, 56, 56);
+    display: inline-block;
+    margin: 0;
+    transition: all 0.3s;
+}
+.Vit:hover > img{
+    transform: scale(1.1);
+}
+.goodbox:hover > img{
+opacity: 0.8;
+background-color: rgb(3, 3, 3);
+transform: scale(1)!important;
+
+}
+.goodbox:hover > .goodTobasket{
+    visibility: visible;
+    opacity: 1;
+    
+    }
+.goodbox:hover>.goodTobasket>.good-icons>i{
+    transform: scale(1.2)
+}
+.goodbox:hover>.goodTobasket>.bag-btn{
+     top: 50%;
+ }
+    
+/* .Vit-bottom>p:hover{
+    background-color: rgba(116, 239, 255, 0.938);
+    color: white;
+} */
+.v3{
+    text-align: right;
+    position: absolute;
+    /* width: 100%; */
+    bottom: 40%!important;
+    width: 100%;
+    text-align: center!important;
+    direction: rtl;
+    text-align: right;
+    position: absolute;
+    /* width: 100%; */
+    bottom: 7%;
+    font-size: 20px;
+    font-size: calc(0.7em + 1vmin)
+}
+.v3>.buy{
+    width: 20%;
+    margin: auto;
+    transition: all 0.3s;
+}
+.buy{
+    padding: 10px 40px;
+    background-color: white;
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 50px;
+}
+.buy:hover{
+    background-color: rgb(58, 58, 58);
+    color: white;
+    cursor: pointer;
+}
+.Good{
+    bottom: 3%!important;
+    width: 100%;
+    direction: rtl;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.692);
+
+}
+@media only screen and (max-width: 990px) {
+   
+    .Vitrin-Holder{
+        flex-wrap: wrap;
+    }
+    .Vit{
+        width: 45%;
+        order: 2;
+    }
+    .Sale-good{
+        width: 92%!important;
+        order: 1;
+        margin-bottom: 20px!important;
+    }
+    .timer-inside p{
+        font-size: 30px!important;
+        line-height: 42px;
+    }
+    .Sale-good span{
+        font-size: 30px!important;
+        line-height: 42px;
+    }
+    .off-bag{
+        width: 100px!important;
+        padding: 15px!important;
+    }
+    .Good{
+        padding: 20px 0;
+    }
+    .Good p{
+        font-size: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 770px) {
+   
+    .Vitrin-Holder{
+        flex-wrap: wrap;
+    }
+    .Vit{
+        width: 100%;
+        order: 2;
+    }
+    .Sale-good{
+        width: 100%!important;
+        order: 1;
+        margin-bottom: 20px!important;
+    }
+  }

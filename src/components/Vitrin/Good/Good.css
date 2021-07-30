@@ -1,0 +1,241 @@
+
+.Sale-good{
+    width: 100%;
+    margin: 0px 10px;
+    position: relative;
+    overflow: hidden;
+    line-height: 15px;
+    cursor: pointer;
+
+}
+.Sale-good>img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all;
+}
+.Sale-good>.Vit-bottom{
+    right: 15px;
+    text-align: right;
+    position: absolute;
+    /* width: 100%; */
+    bottom: 7%;
+    font-size: 20px;
+    font-size: calc(0.7em + 1vmin);
+}
+
+.Sale-good:hover > img{
+    transform: scale(1.1);
+}
+.Sale-good:hover > img{
+opacity: 0.8;
+background-color: rgb(3, 3, 3);
+transform: scale(1)!important;
+
+}
+.Sale-good:hover > .Sale-good_cover{
+    visibility: visible;
+    opacity: 1;
+    
+    }
+.Sale-good:hover>.Sale-good_cover>.good-icons>i{
+    transform: scale(1.2)
+}
+.Sale-good:hover>.Sale-good_cover>.bag-btn{
+     top: 50%;
+ }
+    
+
+.Good{
+    bottom: 3%!important;
+    width: 100%;
+    direction: rtl;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.692);
+
+}
+.title{
+    padding: 5px 20px;
+}
+.title>p:first-of-type{
+    width: 60%;
+    display: block;
+    margin: auto;
+    /* font-size: calc(0.7em + 1vmin); */
+    cursor: pointer;
+}
+.title>p:first-of-type:hover{
+    color: rgba(34, 157, 161, 0.705);
+    }
+.off{
+    cursor: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.off>p:nth-of-type(1){
+    /* font-size: 14px; */
+    text-decoration: line-through;
+}
+.off>p:nth-of-type(2){
+    /* font-size: 14px; */
+    color: red;
+}
+.timer{
+    bottom: 20%!important;
+    width: 100%;
+    height: 15%;
+    direction: rtl;
+    position: absolute;
+}
+.timer-inside{
+    width: 85%!important;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timer p{
+    width: 100%;
+    height: 100%;
+    margin: 1%!important;
+    background-color: #000000eb;
+     display: flex!important; 
+     justify-content: center;
+    align-items: center;
+    text-align: center; 
+    color: white!important;
+    display: flex; 
+    border-radius: 10px;
+    font-size: 22px;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.time>.unit{
+    color: white;
+    font-size: 12px;
+}
+/* ///////////////////////////////// */
+.Sale-good_cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(7, 7, 7, 0.486);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    z-index: 3;
+}
+.good-icons{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+.good-icons>i{
+    margin: 10px 0;
+    color: white;
+    transform: scale(0.1);
+    transition: 0.4s;
+}
+.good-icons>i:hover{
+    color: rgb(0, 195, 255);
+}
+.bag-btn{
+   position: absolute;
+    top: 40%;
+     width:100%;
+     border-radius: 50px;
+     z-index: 3;
+     transition: .3s
+}
+.bag-btn>span{
+      width:20px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 50px;
+      padding: 10px 15px;
+      transition: all 0.3s;
+ }
+ .bag-btn>span:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.off-bag{
+    position: absolute;
+    width: 50px;
+    padding: 5px;
+    background-color: rgb(255, 166, 0);
+    top: 10px;
+    right: 10px;
+    z-index: 1; 
+}
+.off-bag>span{
+    margin: 0;
+    color: white;
+}
+@media only screen and (max-width: 930px){
+    .title>p:first-of-type{
+        width: 100%;
+    }
+.timer{
+    bottom: 40%!important;
+}
+.time{
+    font-size: 11px!important;
+}
+.Good{
+    font-size: 9px;
+}
+.off{
+   font-size: 9px!important;
+}
+.title{
+    padding: 0;
+}
+
+}
+@media only screen and (max-width: 500px){
+    .timer{
+        bottom: 40%!important;
+    }
+    .time{
+        font-size: 3px!important;
+    }
+    .Good{
+        font-size: 3px;
+    }
+    .off{
+       font-size: 3px!important;
+    }
+    .unit{
+        font-size: 3px!important;
+    }
+    .off-bag{
+        width: 20px;
+    font-size: 8px;
+    line-height: 2px;
+    }
+    .timer p {
+        line-height:5px !important;
+    }
+    .Sale-good_cover>.bag-btn {
+        font-size: 3px;
+    }
+    .Sale-good:hover>.Sale-good_cover>.bag-btn {
+        font-size: 3px;
+    }
+    .good-icons {
+        top:0;
+        font-size: 3px;
+        line-height: 2px;
+        }
+}
+    
+    

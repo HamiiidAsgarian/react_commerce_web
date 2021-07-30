@@ -1,0 +1,39 @@
+.Service *{
+    padding: 0;
+    margin: 0;
+}
+.Service{
+    display: flex;
+    width: 100%;
+    height: 140px;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row-reverse;
+    margin: 0 10px;
+}
+.Service-image{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(150, 150, 150); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Service-image>i{
+font-size: 70px;
+}
+
+.Service-info{
+   display: flex;
+   justify-content: right;
+   align-items: center;
+}
+.Service-info>.justifier{
+    text-align: right;
+    padding: 0 10px;
+}
+.justifier>p{
+   color: rgb(109, 109, 109);
+}
+.justifier>p>span{
+    color: rgb(0, 0, 0);
+ }

@@ -1,0 +1,111 @@
+.SlideShow{
+    max-width: 100%;
+    margin:  auto;
+    margin-bottom: 20px;
+}
+.Frame{
+    height: 700px;
+
+    position: relative;
+    margin: auto;
+    /* height: inherit;  */
+    overflow: hidden;
+}
+.load{
+    height: inherit;
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    left: 00px;
+    right: 1000px;
+    position: absolute;
+transition: all 1S;
+}
+.load img{
+    width: 100%;
+}
+/* /////////////////////////////////////// */
+.slide1{
+    height: 100%;
+}
+.slide2{
+    height: 100%;
+}
+.slide3{
+    height: 100%;
+}
+/* /////////////////////////////////////// */
+
+.points-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 2%; */
+    /* z-index: 1; */
+}
+.points{
+    border-radius: 40px;
+    margin: 7px;
+    /* width: 15px; */
+    height: 12px;
+    background-color: #ffffff48;
+    /* border: 3px solid rgb(49, 49, 49); */
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:80%;
+    left:10%;
+    width:50px;
+    height:50px;
+    z-index:1;
+    background-Color:rgb(0, 204, 255);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    /* direction: rtl; */
+    /* position: relative; */
+}
+.brand:hover > .points{
+    background-color: rgb(0, 0, 0);
+    left:10%;
+}
+.two{
+    top:15%;
+    left:140%;
+}
+.three{
+    top:15%;
+    left:240%;
+}
+.four{
+    top:85%;
+    left:260%;
+}
+.five{
+    top:55%;
+    left:280%;
+}
+.brandName{
+    position: absolute;
+    top: 60px;
+    padding: 5px 10px;
+    width: 100px;
+    background-color: #fff;
+    color: gray;
+    visibility: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+    direction: rtl;
+
+}
+.brand:hover>.brandName{
+visibility: visible;
+opacity: 1;
+}
